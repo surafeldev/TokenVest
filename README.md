@@ -1,6 +1,6 @@
 ---
 title TokenVest: Decentralized Vesting DApp
-<Project status: In Progress
+Project status: In Progress
 ---
 
 
