@@ -1,5 +1,5 @@
 ---
-title TokenVest: Decentralized Vesting DApp
+Project Title - TokenVest: Decentralized Vesting DApp
 Project status: In Progress
 ---
 
