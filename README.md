@@ -1,5 +1,6 @@
 ---
-title: TokenVest - Decentralized Vesting DApp
+Project title - TokenVest: Decentralized Vesting DApp
+Project status: In Progress
 ---
 
 # TokenVest - Decentralized Vesting DApp
@@ -40,7 +41,7 @@ my-vesting-dapp/
 │   ├── favicon.ico
 │   └── ...
 │
-├── README.md
+├── README.mdx
 ├── postcss.config.js
 ├── tailwind.config.js
 └── package.json
