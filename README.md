@@ -40,7 +40,7 @@ my-vesting-dapp/
 │   ├── favicon.ico
 │   └── ...
 │
-├── README.mdx
+├── README.md
 ├── postcss.config.js
 ├── tailwind.config.js
 └── package.json
