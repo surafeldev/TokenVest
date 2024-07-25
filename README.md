@@ -1,5 +1,5 @@
 ---
-<title style="background-color: yellow">TokenVest - Decentralized Vesting DApp</title>
+title TokenVest: Decentralized Vesting DApp
 <Project status: In Progress
 ---
 
