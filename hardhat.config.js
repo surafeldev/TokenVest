@@ -1,37 +1,34 @@
-require('dotenv').config();
 require("@nomiclabs/hardhat-waffle");
-require("@nomiclabs/hardhat-ethers");
-// require("@nomicfoundation/hardhat-toolbox");
-
-const { alchemyApiKey, infuraProjectId, mnemonic } = require('./secrets.json');
+require("dotenv").config();
 
 module.exports = {
-  solidity: '0.8.20',
+
+  solidity: {
+    compilers: [
+      {
+        version: "0.8.20",
+      },
+      {
+        version: "0.8.4",
+      }
+    ]
+  },
 
   networks: {
-    sepolia: { // Sepolia network configuration (for local testing) 
-      url: process.env.INFURA_URL, // Infura URL
-      accounts: [process.env.PRIVATE_KEY].filter(key => key !== undefined) // Private key
-    },
-
-    hardhat: {
-      // Local Hardhat network configuration
-      chainId: 1337,
-    },
-
     sepoliaAlchemy: {
-      url: `https://eth-sepolia.g.alchemy.com/v2/${alchemyApiKey}`,
-      accounts: { mnemonic: mnemonic }
+      url: process.env.ALCHEMY_URL, // Ensure you have ALCHEMY_URL in your .env file
+      accounts: [process.env.PRIVATE_KEY]
     },
 
     sepoliaInfura: {
-      url: `https://sepolia.infura.io/v3/${infuraProjectId}`,
-      accounts: { mnemonic: mnemonic }
+      url: process.env.INFURA_URL,
+      accounts: [process.env.PRIVATE_KEY]
+    },
+
+    sofplia: {
+      url: process.env.SOFPLIA_URL || 'https://eth-sepolia.g.alchemy.com/', // Ensure you have SOFPLIA_URL in your .env file
+      accounts: [process.env.SOFPLIA_PRIVATE_KEY || '0xb5422d4ffb22c44fbd7b61201db78a7e580daf7abd4aecce363bebdb871e2e96'] 
     }
   },
 
-  paths: {
-    artifacts: "./src/contracts/artifacts",
-    compiler: "./path/to/solc"
-  }
 };

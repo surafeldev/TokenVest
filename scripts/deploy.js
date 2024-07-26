@@ -5,7 +5,7 @@ async function main() {
   
     console.log("OrganizationRegistry deployed to:", organizationRegistry.address);
   
-    // You can deploy other contracts here as needed
+    // deploy other contracts here as needed
   }
   
   main()
