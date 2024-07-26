@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import RegisterOrganization from '../components/RegisterOrganization'
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
         <Link href="/admin">
           <a className="text-blue-500">Go to Admin Dashboard</a>
         </Link>
+
+        <RegisterOrganization />
       </main>
     </div>
   )
