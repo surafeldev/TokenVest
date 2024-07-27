@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { ethers } from 'ethers'
-import OrganizationRegistryABI from '../artifacts/contracts/OrganizationRegistry.sol/OrganizationRegistry.json'
+// Ensure the path to OrganizationRegistry.json is correct
+import OrganizationRegistryABI from '../contracts/artifacts/contracts/OrganizationRegistry.sol/OrganizationRegistry.json'
+// import OrganizationRegistryABI from '../src/contracts/artifacts/contracts/OrganizationRegistry.sol/OrganizationRegistry.json'
 
 const RegisterOrganization = () => {
   const [name, setName] = useState('')
